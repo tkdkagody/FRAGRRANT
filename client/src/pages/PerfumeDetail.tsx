@@ -2,18 +2,15 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 
-
-function Modify() {
+function PerfumeDetail() {
 
     const Wrap = styled.section`
-        background-color: darkgoldenrod;
+        background-color: red;
     `;
-  
     return (
 
-        <Wrap>정보수정</Wrap>
-
+        <Wrap>섹션1</Wrap>
     )
 }
 
-export default Modify;
+export default PerfumeDetail;

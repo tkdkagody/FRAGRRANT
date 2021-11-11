@@ -6,17 +6,19 @@ import Main from './pages/Main';
 import Modify from './pages/Modify';
 import Mypage from './pages/Mypage';
 import Perfume from './pages/Perfume';
+import PerfumeDetail from './pages/PerfumeDetail';
 import Result from './pages/Result';
 import Test from './pages/Test';
 
 
-const App: React.FC = () =>  {
+function App ()  {
   return (
  
     <Switch>
       <Redirect exact path='/' to='/main' />
       <Route path='/main' component={Main}/>
       <Route exact path="/perfume" component={Perfume} />
+      <Route exact path="/perfume/:id" component={PerfumeDetail} />
       <Route exact path="/test" component={Test} />
       <Route exact path="/test_result" component={Result} />
       <Route exact path="/mypage" component={Mypage} />

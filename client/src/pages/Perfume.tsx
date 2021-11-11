@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 
-const Perfume: React.FC = () => {
+function Perfume() {
 
     const Wrap = styled.section`
         background-color: yellow;

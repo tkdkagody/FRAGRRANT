@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 
 
-const Mypage: React.FC = () => {
+function Mypage() {
 
     const Wrap = styled.section`
         background-color: teal;

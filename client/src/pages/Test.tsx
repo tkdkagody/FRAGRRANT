@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 
-const Test: React.FC = () => {
+function Test () {
 
     const Wrap = styled.section`
         background-color: blue;
