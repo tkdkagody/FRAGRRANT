@@ -19,12 +19,6 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": ".",
-    "paths": {  //절대경로 설정
-      "@pages/*": ["pages/*"],  
-      "@hooks/*": ["hooks/*"],
-      "@components/*": ["components/*"],
-    }
   },
   "include": [
     "src"
