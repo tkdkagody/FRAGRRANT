@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Wrap = styled.section`
+export const Black = styled.section`
   position: fixed;
   background: rgba(0, 0, 0, 0.5);
   width: 100vw;
@@ -18,7 +18,7 @@ export const Container = styled.div`
   background-color: white;
   padding: 1.5rem ;
   width: 35rem;
-  height: 41rem;
+  height: 45rem;
   z-index: 20;
   border-radius: 10px;
 `;
@@ -118,4 +118,30 @@ export const Button = styled.button`
     --saf-0: rgba(var(--sk_highlight, 18, 100, 163), 1);
     box-shadow: 0 0 0 1px var(--saf-0), 0 0 0 0.2rem rgba(57, 66, 70, 0.3);
   }
+`;
+
+export const LinkContainer = styled.p`
+  font-size: 0.8rem;
+  color: rgb(90, 90, 90);
+  margin: 0 auto;
+  width: 23rem;
+  max-width: 23rem;
+  & > span {
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+`;
+
+export const Error = styled.div`
+  color: #e01e5a;
+  margin: 8px 0 16px;
+  font-weight: bold;
+`;
+
+export const Success = styled.div`
+  color: #2eb67d;
+  font-weight: bold;
 `;

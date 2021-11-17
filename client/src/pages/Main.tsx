@@ -16,7 +16,7 @@ function Main() {
         
         <Nav></Nav>
         <Wrap>섹션1</Wrap>
-        {/* <LoginModal></LoginModal> */}
+        <LoginModal></LoginModal>
         </>
     )
 }
