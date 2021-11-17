@@ -12,7 +12,7 @@ function Result () {
   
     return (
         <>
-        <Nav></Nav>
+      
         <Wrap>투표 결과 페이지 </Wrap>
         </>
     )

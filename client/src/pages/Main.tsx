@@ -1,7 +1,8 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import LoginModal from '../component/LoginModal';
 import Nav from '../component/Nav';
+import LoginModal from '../component/Signup';
+
 
 
 function Main() {
@@ -15,7 +16,7 @@ function Main() {
         
         <Nav></Nav>
         <Wrap>섹션1</Wrap>
-        <LoginModal></LoginModal>
+        {/* <LoginModal></LoginModal> */}
         </>
     )
 }
