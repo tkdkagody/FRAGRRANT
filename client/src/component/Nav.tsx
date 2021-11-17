@@ -1,10 +1,12 @@
 import * as React from 'react';
-import { useHistory } from 'react-router';
+import { useHistory } from 'react-router-dom';
+
 import styled from 'styled-components';
 
-function Nav() : JSX.Element {
+function Nav()  {
 
     const history = useHistory();
+
 
     const Wrap = styled.section`
         background-color: #D9D0C7;
@@ -61,7 +63,6 @@ function Nav() : JSX.Element {
     `;
 
     return (
-
         <Wrap>
             <CategoryBorder>
                 <Perfume>Perfume</Perfume>
@@ -69,7 +70,8 @@ function Nav() : JSX.Element {
                 <Search>Search</Search>
             </CategoryBorder>
             <LogoBorder> 
-                <Logo onClick={() => history.push('/')}>FRAGRANT</Logo> </LogoBorder>
+                <Logo onClick={() => history.push('/')}>FRAGRANT</Logo>
+                </LogoBorder>
             <UserBtnBorder>
                 <Mypage></Mypage>
                 <Login>Login</Login>

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import Nav from '../component/Nav';
 
 
 
@@ -10,9 +11,10 @@ function Modify() {
     `;
   
     return (
-
+        <>
+<Nav></Nav>
         <Wrap>정보수정</Wrap>
-
+</>
     )
 }
 
