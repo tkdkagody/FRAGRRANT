@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import Nav from '../component/Nav';
 
 
 function Test () {
@@ -8,8 +9,10 @@ function Test () {
         background-color: blue;
     `;
     return (
-
-        <Wrap>섹션2</Wrap>
+        <>
+        <Nav></Nav>
+        <Wrap>섹션2테스트보기</Wrap>
+        </>
     )
 }
 

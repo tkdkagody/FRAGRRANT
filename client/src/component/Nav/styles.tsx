@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrap = styled.section`
     /* background-color: #D9D0C7; */
-    background-color: rgba(223, 243, 204, 0.6);
+    /* background-color: rgba(223, 243, 204, 0.6); */
     width: 100%;
     height: 5rem;
     display: flex;

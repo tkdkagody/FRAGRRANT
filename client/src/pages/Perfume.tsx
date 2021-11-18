@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import Nav from '../component/Nav';
 
 
 function Perfume() {
@@ -8,8 +9,10 @@ function Perfume() {
         background-color: yellow;
     `;
     return (
-
-        <Wrap>섹션2</Wrap>
+        <>
+        <Nav></Nav>
+        <Wrap>섹션2퍼퓸보기</Wrap>
+        </>
     )
 }
 

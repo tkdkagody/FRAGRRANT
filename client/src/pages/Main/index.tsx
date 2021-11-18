@@ -7,8 +7,11 @@ import Nav from '../../component/Nav';
 import Signup from '../../component/Signup';
 import { MainSection, Box, TestTxt, InfoTxt } from './styles'
 import { gsap } from "gsap";
+import { useHistory } from 'react-router-dom';
 
 function Main() {
+    const history = useHistory();
+
 
     const imgRef = useRef<HTMLImageElement>(null);
     const tl = gsap.timeline({ defaults: { ease: 'Power2.easeInOut' } });
@@ -60,7 +63,14 @@ function Main() {
         });
 
     },[]);
+
+    const handleClickTest = () => {
+        history.push('/test')
+    }
    
+    const handleClickPerfume = () => {
+        history.push('/perfume')
+    }
 
     return (
         <>
@@ -71,13 +81,13 @@ function Main() {
                     <div>FIND</div>
                     <div>YOUR</div>
                     <div>FRAGRANT</div>
-                    <span>테스트하러가기</span>
+                    <span onClick={handleClickTest}>테스트하러가기</span>
                 </TestTxt>
                 <InfoTxt>
                     <div>SEARCH</div>
                     <div>SOME</div>
                     <div>FRAGRANT</div>
-                    <span>향수보러가기</span>
+                    <span onClick={handleClickPerfume}>향수보러가기</span>
                 </InfoTxt>
             </MainSection>
             <Footer></Footer>
