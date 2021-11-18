@@ -1,27 +1,25 @@
 import styled from 'styled-components';
 
 export const MainSection = styled.section`
+  position: relative;
     width: 100%;
     height: 92vh;
     background-image: url('../../images/main.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.9;
+    opacity: 0.8;
     display: flex;
     flex-direction: row;
     align-items: center;
-
-    
 `;
 
 export const TestTxt = styled.div`
     width: 25rem; 
     height: 30rem;
     margin-left: 10rem;
-    margin-top: -15rem;
+    margin-top: -5rem;
     padding: 0.2rem;
-
     & > div {
         font-size: 2rem;
         font-weight: bold;
@@ -72,4 +70,18 @@ export const InfoTxt = styled(TestTxt)`
         text-indent: 0.3rem;
         letter-spacing: 3.3rem;
     }
+`;
+
+
+export const Box = styled.div`
+    position: absolute;
+    top:0;
+    left:0;
+    width: 15rem; 
+    height: 15rem; 
+    background-image: url('../../images/main2.jpg');
+    background-repeat: no-repeat;
+    background-size: 15rem 15rem;
+    opacity: 0.5;
+    border-radius : 50%;
 `;
