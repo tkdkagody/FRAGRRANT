@@ -18,15 +18,16 @@ function Main() {
 
     useEffect(()=> {
         tl.to(imgRef.current, {
-            duration: 10, 
-            rotation: 300,
+            duration: 15, 
+            rotation:300,
+            transformOrigin:"50% 90%",
             x: 1550,
-            y: 600, 
+            y: 500, 
             ease: "none", 
             delay: 0.2,
         });
         tl.to(imgRef.current, {
-            duration: 9, 
+            duration: 15, 
             rotation: -360,
             x: 20,
             y: 200, 
@@ -36,13 +37,15 @@ function Main() {
         tl.to(imgRef.current, {
             duration: 15, 
             rotation: 300,
+            transformOrigin:"50% 90%",
             x: 1550,
             y: 20, 
             opacity: 0.2, 
         });
         tl.to(imgRef.current, {
-            duration: 12, 
+            duration: 17, 
             rotation: -300,
+            transformOrigin:"50% 90%",
             x: 500,
             y: 200, 
             opacity: 0.2, 
@@ -50,13 +53,15 @@ function Main() {
         tl.to(imgRef.current, {
             duration: 12, 
             rotation: 300,
+            transformOrigin:"50% 90%",
             x: 1500,
             y: 200, 
             opacity: 0.3, 
         });
         tl.to(imgRef.current, {
-            duration: 15, 
+            duration: 19, 
             rotation: -300,
+            transformOrigin:"50% 90%",
             x: 10,
             y: 10, 
             opacity: 0.3, 
