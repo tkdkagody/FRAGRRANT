@@ -2,7 +2,7 @@ import React from 'react';
 import { Redirect } from 'react-router-dom';
 import { Switch ,Route, RouteComponentProps } from 'react-router-dom';
 import './App.css';
-import Main from './pages/Main/Main';
+import Main from './pages/Main';
 import Modify from './pages/Modify';
 import Mypage from './pages/Mypage';
 import Perfume from './pages/Perfume';
