@@ -85,7 +85,7 @@ function Signup ({signupModal, setSignupModal} : MainProps) {
                     <Label >
                         <span>휴대폰번호</span>
                         <div>
-                            <Input value={phonenum} onChange={onChangePhonenum}/>
+                            <Input type="text" maxLength={11} value={phonenum} onChange={onChangePhonenum}/>
                         </div>
                     </Label>
                     <Label>
