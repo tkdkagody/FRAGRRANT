@@ -2,12 +2,10 @@ import { Black, Container, Close, Header, Form, Label, Input, Button } from  './
 
 interface MainProps {
     loginModal : boolean;
-    signupModal: boolean; 
     setLoginModal: React.Dispatch<React.SetStateAction<boolean>>;
-    setSignupModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const Login = ({loginModal, signupModal, setLoginModal, setSignupModal} : MainProps) => {
+const Login = ({loginModal, setLoginModal } : MainProps) => {
     const handleClickClose = () => {
         setLoginModal(false);
     }

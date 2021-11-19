@@ -1,6 +1,7 @@
 import { useHistory } from 'react-router-dom';
 import Login from '../Login';
-import { Wrap, CategoryBorder, Perfume, Test, Search, LogoBorder, Logo, UserBtnBorder, Mypage, LoginCate, Signup  } from './styles';
+import Signup from '../Signup';
+import { Wrap, CategoryBorder, Perfume, Test, Search, LogoBorder, Logo, UserBtnBorder, Mypage, LoginCate, SignupCate  } from './styles';
 
 
 interface MainProps {
@@ -20,6 +21,12 @@ function Nav({loginModal, signupModal, setLoginModal, setSignupModal} : MainProp
         }
     }
 
+    const handleClickSignup = () => {
+        if(!signupModal) {
+            setSignupModal(true);
+        }
+    }
+
        return (
         <Wrap>
             <CategoryBorder>
@@ -33,14 +40,17 @@ function Nav({loginModal, signupModal, setLoginModal, setSignupModal} : MainProp
             <UserBtnBorder>
                 <Mypage></Mypage>
                 <LoginCate onClick={handleClickLogin}>Login
-                {loginModal ? <Login 
-                    loginModal={loginModal} 
-                    signupModal={signupModal}
-                    setLoginModal={setLoginModal}
-                    setSignupModal={setSignupModal}
-                /> : null }
+                    {loginModal ? <Login 
+                        loginModal={loginModal} 
+                        setLoginModal={setLoginModal}  
+                    /> : null }
                 </LoginCate>
-                <Signup>Signup</Signup>
+                <SignupCate onClick={handleClickSignup}>Signup
+                    {signupModal ? <Signup 
+                        signupModal={signupModal}
+                        setSignupModal={setSignupModal}
+                    /> : null}
+                </SignupCate>
             </UserBtnBorder>
         </Wrap>
     )
