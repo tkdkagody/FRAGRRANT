@@ -1,11 +1,20 @@
 import { Black, Container, Close, Header, Form, Label, Input, Button } from  './styles'
 
+interface MainProps {
+    loginModal : boolean;
+    signupModal: boolean; 
+    setLoginModal: React.Dispatch<React.SetStateAction<boolean>>;
+    setSignupModal: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
-const Login = () => {
+const Login = ({loginModal, signupModal, setLoginModal, setSignupModal} : MainProps) => {
+    const handleClickClose = () => {
+        setLoginModal(false);
+    }
     return(
         <Black>
             <Container>
-                <Close>
+                <Close onClick={handleClickClose}>
                     <img src="../../icons/close.svg"></img>
                 </Close>
                 <Header>Login</Header>
@@ -15,9 +24,7 @@ const Login = () => {
                         <div>
                             <Input/> 
                         </div>
-                    </Label>
-                   
-                    
+                    </Label> 
                     <Label>
                         <span>비밀번호</span>
                         <div>

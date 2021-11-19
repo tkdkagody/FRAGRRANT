@@ -1,5 +1,4 @@
 import * as React from 'react';
-import styled from 'styled-components';
 import { useState, useRef, useEffect } from 'react';
 import Footer from '../../component/Footer';
 import Login from '../../component/Login';
@@ -8,6 +7,8 @@ import Signup from '../../component/Signup';
 import { MainSection, Box, TestTxt, InfoTxt } from './styles'
 import { gsap } from "gsap";
 import { useHistory } from 'react-router-dom';
+
+
 
 function Main() {
     const history = useHistory();
@@ -79,7 +80,7 @@ function Main() {
 
     return (
         <>
-            <Nav></Nav>
+            {/* <Nav></Nav> */}
             <MainSection>
                 <Box ref={imgRef}></Box>
                 <TestTxt>

@@ -52,7 +52,7 @@ export const Test = styled(Perfume)``;
 export const Search = styled(Perfume)``;
 
 export const UserBtnBorder = styled(CategoryBorder)``;
-export const Login = styled(Perfume)``;
+export const LoginCate = styled(Perfume)``;
 export const Signup = styled(Perfume)``;
 export const Mypage = styled(Perfume)`
 cursor:default;

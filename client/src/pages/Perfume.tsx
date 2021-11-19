@@ -10,7 +10,7 @@ function Perfume() {
     `;
     return (
         <>
-        <Nav></Nav>
+        {/* <Nav></Nav> */}
         <Wrap>섹션2퍼퓸보기</Wrap>
         </>
     )

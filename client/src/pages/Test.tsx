@@ -10,7 +10,7 @@ function Test () {
     `;
     return (
         <>
-        <Nav></Nav>
+        {/* <Nav></Nav> */}
         <Wrap>섹션2테스트보기</Wrap>
         </>
     )
