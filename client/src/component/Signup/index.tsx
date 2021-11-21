@@ -8,6 +8,7 @@ interface MainProps {
     setSignupModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
+axios.defaults.withCredentials = true;
 function Signup ({signupModal, setSignupModal} : MainProps) {
 
     const [email, onChangeEmail] = useInput('');
