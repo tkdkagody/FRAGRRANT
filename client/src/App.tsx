@@ -7,6 +7,7 @@ import Main from './pages/Main';
 import Modify from './pages/Modify';
 import Mypage from './pages/Mypage';
 import Perfume from './pages/Perfume';
+
 import PerfumeDetail from './pages/PerfumeDetail';
 import Result from './pages/Result';
 import Search from './pages/Search';
