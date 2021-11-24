@@ -2,7 +2,6 @@ import * as React from 'react';
 import { useState, useRef, useEffect } from 'react';
 import Footer from '../../component/Footer';
 import Login from '../../component/Login';
-import Nav from '../../component/Nav';
 import Signup from '../../component/Signup';
 import { MainSection, Box, TestTxt, InfoTxt } from './styles'
 import { gsap } from "gsap";
