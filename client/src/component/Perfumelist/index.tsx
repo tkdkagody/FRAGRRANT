@@ -2,6 +2,7 @@ import { Box } from './styles';
 
 interface PerfumeProps {
     perfume: {
+        id: number;
         name: string; 
         month: string; 
         season: string; 

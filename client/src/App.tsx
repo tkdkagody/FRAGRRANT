@@ -7,14 +7,11 @@ import Main from './pages/Main';
 import Modify from './pages/Modify';
 import Mypage from './pages/Mypage';
 import Perfume from './pages/Perfume';
-
-import PerfumeDetail from './pages/PerfumeDetail';
+import PerfumeDetail from './pages/Perfumedetail';
 import Result from './pages/Result';
 import Search from './pages/Search';
 import Test from './pages/Test';
-
-
-
+import axios from 'axios';
 
 
 function App ()  {
@@ -22,7 +19,8 @@ function App ()  {
   const [loginModal, setLoginModal] = useState<boolean>(false);
   const [signupModal, setSignupModal] = useState<boolean>(false);
 
-  
+  const [openPerfume, setOpenPerfume] = useState<boolean>(false);
+
 
   return (
     <>
@@ -37,8 +35,12 @@ function App ()  {
     <Switch>
       <Redirect exact path='/' to='/main' />
       <Route  path={'/main'} component={Main}  />
-      <Route exact path={"/perfume"} component={Perfume} />
-      <Route exact path={"/perfume/:id"} component={PerfumeDetail} />
+     
+      <Route path="/perfume"
+					render={() => {
+						return <Perfume openPerfume={openPerfume} setOpenPerfume={setOpenPerfume}/>;
+					}} />
+      <Route exact path={"/perfume_detail"} component={PerfumeDetail} />
       <Route exact path={"/test"} component={Test} />
       <Route exact path={"/test_result"} component={Result} />
       <Route exact path={"/search"} component={Search} />
