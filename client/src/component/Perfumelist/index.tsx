@@ -5,6 +5,7 @@ interface PerfumeProps {
         name: string; 
         month: string; 
         season: string; 
+        mood: Array<string>;
         img: string; 
     };
     key: number;
