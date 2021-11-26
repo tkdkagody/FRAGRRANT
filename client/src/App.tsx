@@ -27,7 +27,7 @@ function App ()  {
     <Nav 
       loginModal={loginModal} 
       signupModal={signupModal}
-      setLoginModal={setLoginModal}
+      setLoginModal ={setLoginModal}
       setSignupModal={setSignupModal}
     ></Nav>
  
