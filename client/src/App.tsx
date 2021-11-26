@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Redirect } from 'react-router-dom';
 import { Switch ,Route, RouteComponentProps } from 'react-router-dom';
 import './App.css';
@@ -14,13 +14,12 @@ import Test from './pages/Test';
 import axios from 'axios';
 
 
+
+
 function App ()  {
 
-  const [loginModal, setLoginModal] = useState<boolean>(false);
-  const [signupModal, setSignupModal] = useState<boolean>(false);
-
-  const [openPerfume, setOpenPerfume] = useState<boolean>(false);
-
+  const [loginModal, setLoginModal] = useState(false);
+  const [signupModal, setSignupModal] = useState(false);
 
   return (
     <>
@@ -38,7 +37,7 @@ function App ()  {
      
       <Route path="/perfume"
 					render={() => {
-						return <Perfume openPerfume={openPerfume} setOpenPerfume={setOpenPerfume}/>;
+						return <Perfume/>;
 					}} />
       <Route exact path={"/perfume_detail"} component={PerfumeDetail} />
       <Route exact path={"/test"} component={Test} />

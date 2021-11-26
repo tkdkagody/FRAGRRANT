@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 
 export const Section = styled.section`
-        border: 1px solid black;
         width: 100%;
         height: 100vh;
         padding: 1rem;
@@ -16,5 +15,22 @@ export const Section = styled.section`
 export const ImgBorder = styled.div`
     width : 50rem;
     height: 50rem;
-    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
+export const Box  = styled.div`
+    width: 60%;
+    height: 60%;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 `;
