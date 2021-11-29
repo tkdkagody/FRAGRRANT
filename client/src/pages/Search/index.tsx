@@ -1,21 +1,22 @@
 import * as React from 'react';
-import styled from 'styled-components';
-import Nav from '../../component/Nav';
+import { Section, SearchBar } from './styles'
 
 
 
 
 function Search() {
 
-    const Wrap = styled.section`
-        background-color: darkgoldenrod;
-    `;
+
   
     return (
         <>
-{/*         
-        <Nav></Nav> */}
-        <Wrap>검색페이지</Wrap>
+        <Section>
+            <SearchBar>
+                <input type="text" placeholder="키워드를 입력하세요."></input>
+                <img src={"../../../icons/search.svg"}></img>
+            </SearchBar>
+        </Section>
+
         </>
     )
 }
