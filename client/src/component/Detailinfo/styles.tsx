@@ -56,7 +56,9 @@ export const MonthBox = styled.div`
 `;
 
 export const Mood = styled.li`
-    height: 8rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 10rem;
     display: flex;
     flex-direction: row;
     align-items: center;
