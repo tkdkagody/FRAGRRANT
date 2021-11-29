@@ -11,9 +11,6 @@ import PerfumeDetail from './pages/Perfumedetail';
 import Result from './pages/Result';
 import Search from './pages/Search';
 import Test from './pages/Test';
-import axios from 'axios';
-
-
 
 
 function App ()  {
