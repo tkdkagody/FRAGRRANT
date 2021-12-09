@@ -3,16 +3,18 @@ import styled from 'styled-components';
 
 
 
-const Modify: React.FC = () => {
+
+function Modify() {
 
     const Wrap = styled.section`
         background-color: darkgoldenrod;
     `;
   
     return (
+        <>
 
         <Wrap>정보수정</Wrap>
-
+</>
     )
 }
 
