@@ -10,7 +10,7 @@ function Mypage() {
 
         <Section>
             <ContentWrap>
-                {"내 정보"}
+                {"내 정보 자리"}
             </ContentWrap>
             <Selection>
                 <Category>
