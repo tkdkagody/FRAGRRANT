@@ -9,7 +9,9 @@ function Mypage() {
     return (
 
         <Section>
-            <ContentWrap></ContentWrap>
+            <ContentWrap>
+                {"내 정보"}
+            </ContentWrap>
             <Selection>
                 <Category>
                     <img src={"../../../icons/profile.svg"} alt={""}></img>
